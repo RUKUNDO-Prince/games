@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 60%;
+    background-color: #ccc;
+    height: 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+ul{
+    list-style: none;
+}
+.province li{
+    float: left;
+}
+li{
+    width: 150px;
+    background-color: #ccc;
+    height: 40px;
+    line-height: 40px;
+}
+li:hover{
+    background-color: aquamarine;
+}
+a{
+    text-decoration: none;
+    display: block;
+    padding: 0 5px;
+    color: #fff;
+}
+.district li {
+    display: none;
+    position :relative;
+    background: aqua;
+}
+.province> li:hover .district li{
+    display:block;
+    background: blueviolet;
+}
+.district li:hover .sector{
+    display: block;
+    position: absolute;
+    left:150px;
+    top:0px;
+}
+/* .district li:hover .sector li{
+    display: block; 
+} */
+.district li:hover .cell{
+    display: none;
+}
+.sector li:hover .cell{
+    display: block;
+    position:absolute;
+    left:150px;
+    top:0;
+}
+.sector li:hover .cell li{
+    display: block;
+}
